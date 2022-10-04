@@ -1,0 +1,232 @@
+*  {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding: 5rem 2rem;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img.logos {
+    display: block;
+    max-width: 5rem;
+    margin-inline: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.container > p, p {
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: grid;
+    padding: 1rem;
+}
+
+.button a {
+    width: min(100%, 18rem);
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 10px 10px 26px -3px rgba(38,186,164,0.75);
+    -webkit-box-shadow: 10px 10px 26px -3px rgba(38,186,164,0.75);
+    -moz-box-shadow: 10px 10px 26px -3px rgba(38,186,164,0.75);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    margin-inline: auto;
+}
+
+a.mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 10px 10px 26px -3px hsl(233, 100%, 69%);
+    -webkit-box-shadow: 10px 10px 26px -3px hsl(233, 100%, 69%),0.75);
+    -moz-box-shadow: 10px 10px 26px -3px hsl(233, 100%, 69%);
+    margin-bottom: 2rem;
+}
+
+.button {
+    margin-bottom: 10rem;
+}
+
+.desktop img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    max-width: 38rem;
+    margin-inline: auto;
+}
+
+h2.clipboard {
+    margin-top: 10rem;
+}
+
+img.devices {
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+img.icon-blacklist, img.text-image, img.preview-image {
+    display: block;
+    margin-inline: auto;
+}
+
+.blacklists h3, .text-snippets h3, .sneak-preview h3 {
+    margin-top: 1.5rem;
+}
+
+.blacklists, .text-snippets, .sneak-preview {
+    margin-top: 4rem;
+}
+
+.companies img {
+    display: block;
+    margin: 3rem;
+    margin-inline: auto;
+}
+
+footer {
+    background-color:  hsl(0, 0%, 92%);
+    width: 100%;
+    padding: 2rem;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+}
+
+footer img {
+    width: 3rem;
+    display: block;
+    margin-inline: auto;
+}
+
+footer a {
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+.social-media {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    display: inline;
+    width: 1.5rem;
+    margin: 1rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(201, 11%, 66%); 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    font-size: large;
+    color: hsl(171, 66%, 44%);
+}
+
+@media screen and (min-width: 48rem) {
+    .button {
+        grid-auto-flow: column;
+        gap: 1rem;
+        max-width: 35rem;
+        margin-inline: auto;
+        margin-bottom: 5rem;
+    }
+
+    .desktop {
+        display: grid;
+        gap: 2.5rem;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .desktop h3, .desktop p {
+        max-width: 25rem;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    h2.clipboard {
+        margin-top: 5rem;
+    }
+    
+    img.devices {
+        display: block;
+        max-width: 35rem;        
+        margin-inline: auto;
+    }
+
+    .work-flow, .companies {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+    }
+
+    .companies {
+        margin-top: 2rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto
+    }
+
+    .footer-link {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-link a {
+        color: hsl(201, 11%, 66%);
+    }
+
+    .social-media {
+        margin: 0;
+    }
+
+    .social-media img {
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+    }
+}
